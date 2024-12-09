@@ -1,52 +1,79 @@
-# Base URL used when generating links to your pages
-# Set to the URL for your site
-baseURL = "https://example.com"
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My website'
+theme = 'typo'
 
-# The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
+[taxonomies]
+tag = 'tags'
 
-# Basic metadata configuration for your blog.
-title = "Hugo ʕ•ᴥ•ʔ Bear Blog"
-author = "Jane Doe"
-copyright = "Copyright © 2020, Jane Doe."
-languageCode = "en-US"
-
-# Generate a nice robots.txt for SEO
-enableRobotsTXT = true
-
-# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
-[permalinks]
-  blog = "/:slug/"
-  tags = "/blog/:slug"
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
 
 [params]
-  # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Hugo + Bear = :heart:"
+# Meta description
+description = "A Tech Blog"
 
-  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
-  # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-  favicon = "images/favicon.png"
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
 
-  # These "images" are used for the structured data templates. This will show up, when
-  # services like Twitter or Slack want to generate a preview of a link to your site.
-  # See https://gohugo.io/templates/internal#twitter-cards and
-  # https://gohugo.io/templates/internal#open-graph.
-  images = ["images/share.png"]
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+I am an Italian Software Engineer with a strong foundation in computer science and a passion for solving complex problems.
+I am interested in a range of topics, including algorithms, distributed systems, databases, and information retrieval.
+"""
 
-  # Another "title" :-). This one is used as the site_name on the Hugo's internal
-  # opengraph structured data template.
-  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "Hugo ʕ•ᴥ•ʔ Bear"
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
 
-  # This theme will, by default, inject a made-with-line at the bottom of the page.
-  # You can turn it off, but we would really appreciate if you don’t :-).
-  # hideMadeWithLine = true
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
 
-  # By default, this theme displays dates with a format like "02 Jan, 2006", but
-  # you can customize it by setting the `dateFormat` param in your site's config
-  # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
-  # for details. An example TOML config that uses [ISO
-  # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
-  # dateFormat = "2006-01-02"
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/user/"
+
+[[params.social]]
+name = "medium"
+url = "https://medium.com/@user"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/user"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
