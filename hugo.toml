@@ -6,8 +6,8 @@ theme = 'typo'
 [taxonomies]
 tag = 'tags'
 
-# Google analytics code
-googleAnalytics = "G-xxxxxxxxx"
+Google analytics code
+googleAnalytics = "G-LY9K6N976J"
 
 [params]
 # Meta description
