@@ -6,7 +6,7 @@ theme = 'typo'
 [taxonomies]
 tag = 'tags'
 
-Google analytics code
+# Google analytics code
 googleAnalytics = "G-LY9K6N976J"
 
 [params]
