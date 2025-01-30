@@ -7,9 +7,8 @@ hidePagination: true
 
 ## Overview
 My undergraduate research project focuses on studying iterated monodromy groups (IMGs) of expanding Thurston maps, under the supervision of Prof. [Zhiqiang Li](http://www.math.pku.edu.cn/teachers/lizq/) (PKU) and Prof. [Tianyi Zheng](https://mathweb.ucsd.edu/~tiz161/)) (UCSD). This project lies at the intersection of dynamical systems, geometric group theory, and probability.
-
-Here is a [poster](/pdfs/research/poster.pdf) that was presented at the [Conference on Holomorphic Dynamics and Fractal Geometry](https://www.math.pku.edu.cn/teachers/lizq/conferences/Jan2025/site.html) in Peking University, with some recent results.
 Here is a [slide](/pdfs/research/IMG.pdf) that was presented during my undergraduate research thesis defense, providing a detailed overview of this research project.
+
 ## Key Results
 We proved that the random walk on the infinite Schreier graph of an IMG of an expanding Thurston map is almost surely recurrent. This result was achieved through:
 - Constructing geometric realizations of finite-level Schreier graphs using tile structures
